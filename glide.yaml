@@ -1,0 +1,23 @@
+package: github.com/tahsinrahman/hello-client-go
+import:
+- package: github.com/appscode/go
+  subpackages:
+  - wait
+- package: github.com/appscode/kutil
+  subpackages:
+  - apps/v1
+  - core/v1
+- package: k8s.io/api
+  subpackages:
+  - apps/v1
+  - core/v1
+  - extensions/v1beta1
+- package: k8s.io/apimachinery
+  subpackages:
+  - pkg/apis/meta/v1
+  - pkg/util/intstr
+- package: k8s.io/client-go
+  version: ~9.0.0
+  subpackages:
+  - kubernetes
+  - tools/clientcmd
